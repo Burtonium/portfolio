@@ -1,0 +1,31 @@
+@import "bootstrap-override";
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  background-color: #2c3037;
+  color: #a9b1b8;
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+/* SCSS */
+.vue-typer {
+  .custom.char {
+    &.typed {
+      color: #a9b1b8;
+    }
+    &.selected {
+      background-color: #747e91;
+    }
+  }
+ 
+  .custom.caret {
+    background-color: #a9b1b8;
+  }
+}
+
+.highlight .custom.char.typed {
+  color: #d19a66;
+}
+
