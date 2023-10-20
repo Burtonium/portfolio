@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Profile from '../components/ProfileImg.astro';
+---
+<style>
+</style>
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<div class="h-screen w-full flex items-center justify-center">
+			<div
+        class="w-[64rem] h-[44rem] bg-[url('/profile.jpg')] bg-cover bg-[center_top_35%]">
+        <div class="w-full h-full flex justify-center items-center bg-gradient-to-r from-eerie-800 via-transparent from-15% via-60% to-eerie-800">
+				<div class="relative z-10 w-full h-full p-32 sm:p-16">
+					<h2 class="text-5xl">Mathieu Bertin</h2>
+					<h3 class="text-3xl font-medium text-primary-400">Full Stack Web Developer</h3>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+
