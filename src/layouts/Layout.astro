@@ -6,21 +6,31 @@ interface Props {
 
 const { title } = Astro.props;
 import '../styles/index.css';
+import { SEOMetadata } from 'astro-seo-metadata';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
+		<SEOMetadata
+			siteName={'Matt\'s Portfolio Website'}
+			title={'Matt\'s Portfolio Website'}
+			description={'Discover Mathieu Bertin\'s portfolio, showcasing innovative full stack web development projects, merging creativity with cutting-edge technology for dynamic, user-centric digital solutions.'}
+			image={'https://portfolio.nephelo.io/profile.jpg'}
+			favicon={'/favicon.svg'}
+			author="Mathieu Bertin"
+			copyright="ISC"
+			astroSitemap={true}
+			canonicalUrl={Astro.url.toString()}
+			type={'website'}
+			astroGenerator={true}
+		/>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;600&family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
-		<title>{title}</title>
 	</head>
 	<body class="max-w-[2440px] mx-auto">
 		<slot />
