@@ -1,6 +1,5 @@
 body {
-  @apply bg-eerie-800;
-  @apply text-alabaster-300;
+  @apply bg-eerie-800 text-alabaster-300;
 }
 
 a {
@@ -12,8 +11,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-title;
-  @apply font-bold;
+  @apply font-title font-bold;
   letter-spacing: 1.25px;
 }
 
